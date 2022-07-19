@@ -1,15 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "b9196e60-0299-4d0f-9c49-4128f416006a"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "arqma-web": {
-      "i18n": {
-        "sourceLocale": "en-US",
-        "locales": {
-          "pl-PL": "src/locale/messages.pl.xlf"
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -26,7 +23,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize": true,
             "outputPath": "dist/arqma-web",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -48,13 +44,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "400kb"
                 }
               ],
               "fileReplacements": [
@@ -64,12 +60,6 @@
                 }
               ],
               "outputHashing": "all"
-            },
-            "en-US": {  
-              "localize": ["en-US"]  
-            },  
-            "pl-PL": {  
-              "localize": ["pl-PL"]  
             },
             "development": {
               "buildOptimizer": false,
@@ -87,12 +77,6 @@
           "configurations": {
             "production": {
               "browserTarget": "arqma-web:build:production"
-            },
-            "en-US": {  
-              "browserTarget": "arqma-web:build:en-US"  
-            },  
-            "pl-PL": {  
-              "browserTarget": "arqma-web:build:pl-PL"  
             },
             "development": {
               "browserTarget": "arqma-web:build:development"
@@ -130,6 +114,5 @@
         }
       }
     }
-  },
-  "defaultProject": "arqma-web"
+  }
 }

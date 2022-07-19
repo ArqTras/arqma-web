@@ -1,50 +1,44 @@
-import { Component, OnInit } from '@angular/core'
-import { EnvironmentService } from '../environment.service'
-import { MenuItem } from '../menu-item'
-
-interface Locale {
-  localCode: string
-  label: string
-}
-
+import { Component, OnInit } from '@angular/core';
+import { EnvironmentService } from '../environment.service';
+import { MenuItem } from '../menu-item';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-responsive-toolbar',
   templateUrl: './responsive-toolbar.component.html',
   styleUrls: ['./responsive-toolbar.component.scss']
 })
 export class ResponsiveToolbarComponent implements OnInit {
-  logo = this.environmentService.buildBaseImageRef("/assets/images/white_logo_transparent_background-250x93.png")
-
-  Languages: string = $localize`:Languages@@Languages:Languages`
-
+  logo = this.environmentService.buildImageUrl("/assets/images/white_logo_transparent_background-250x93.png")
   menuItems: MenuItem[] = [
     {
-      label: $localize`:Home@@Home:Home`,
+      label: 'Home',
       icon: 'home',
       link: ['/home']
     },
     {
-      label: $localize`:Downloads@@Downlods:Downloads`,
+      label: 'Downloads',
       icon: 'download',
       link: ['/downloads']
     },
     {
-      label: $localize`:Press_Kit@@Press_Kit:Press Kit`,
+      label: 'Press_Kit',
       icon: 'calendar_today',
       link: ['/presskit']
     }
+    // {
+    //   label: 'Language',
+    //   icon: '',
+    //   link: []
+    // }
   ]
 
-  locales: Locale[] = [
-    {localCode: this.environmentService.buildBaseRef('/en-US/'), label: $localize`:English@@English:English`},
-    {localCode: this.environmentService.buildBaseRef('/pl-PL/'), label: $localize`:Polish@@Polish:Polish`}
-  ]
-
-  constructor(private environmentService: EnvironmentService) {
+  constructor(private environmentService: EnvironmentService, public translate: TranslateService) {
+    translate.addLangs(['en', 'pl'])
+    translate.setDefaultLang('en')
   }
 
   switchLang(lang: string) {
-    location.href = lang
+    this.translate.use(lang)
   }
 
   ngOnInit(): void {
