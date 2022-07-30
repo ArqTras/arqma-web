@@ -72,7 +72,7 @@ hr {
 }
 
 .applications {
-
+    position: relative;
 }
 
 .ap-col {
@@ -81,7 +81,10 @@ hr {
     padding-bottom: 4rem;
 }
 
-/* Roadmap button*/
+.download-button {
+    padding: 1rem 0 3rem 0;
+}
+
 .button {
     background-color: #FDBF1E;
     border: none;
