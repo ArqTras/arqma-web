@@ -104,3 +104,17 @@ hr {
 .ap-col a{
     color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    #download {
+        padding: 2rem;
+    }
+
+    #container{
+        display: grid;
+    }
+
+    .ap-col{
+        width: 100%;
+    }
+}

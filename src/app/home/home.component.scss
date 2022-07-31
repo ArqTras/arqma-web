@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 3rem;
     letter-spacing: 2.5px;
+    line-height: 1;
 }
 
 h2 {
@@ -41,6 +42,11 @@ hr {
     color: gray;
     background-color: #FDBF1E;
 }
+
+li {
+    color: white;
+}
+
 
 .container {
     position: relative;
@@ -81,6 +87,10 @@ hr {
     background-size: cover;
     background-color: #000000;
     min-height: 58vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .hero-main {
@@ -120,8 +130,10 @@ hr {
     padding-right:4rem;
 }
 
-.whatIs-text {
-
+.whatIs-text h2, .FGNetwork-text h2, .Founder-text h2, .Partners-text h2{
+    color: #FDBF1E;
+    font-size: 2.8rem;
+    letter-spacing: 0.4px;
 }
 
 
@@ -253,3 +265,83 @@ hr {
 
 .Partners-text {
 }
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    h5 {
+        font-size: 1.2rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+
+    .hero-background {
+        padding: 2rem;
+    }
+
+    .hero-logo {
+      float: none;
+    }
+
+    .whatIs-main {
+        padding: 2rem;
+    }
+
+    .whatIs-text h2{
+        font-size: 2rem;
+    }
+
+    .FGNetwork-main{
+        padding: 2rem;
+    }
+
+    .FGNetwork-text h2{
+        font-size: 2rem;
+    }
+
+    .Founder-main {
+        padding: 2rem;
+    }
+
+    .Founder-text h2{
+        font-size: 2rem;
+    }
+
+    .Exchanges-main {
+        padding: 2rem;
+    }
+
+    .Exchanges-text h2{
+        font-size: 2rem;
+    }
+
+    .Roadmap-main {
+        padding: 2rem;
+    }
+
+    .Roadmap-text {
+        float: none;
+    }
+
+    .Partners h2{
+        color:black
+    }
+
+    .Roadmap-text {
+        width: 100%;
+    }
+
+  }
