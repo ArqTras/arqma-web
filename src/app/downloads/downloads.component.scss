@@ -105,6 +105,25 @@ hr {
     color: black;
 }
 
+@media only screen and (max-width: 1200px) {
+    #download {
+        padding: 2rem;
+    }
+
+    .ap-col {
+        margin: 1rem;
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .ap-col {
+        margin: 1rem;
+        width: 27%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #download {
         padding: 2rem;
@@ -116,5 +135,6 @@ hr {
 
     .ap-col{
         width: 100%;
+        padding: 0rem;
     }
 }

@@ -45,6 +45,8 @@ hr {
 
 li {
     color: white;
+    line-height: 1;
+    margin: 1rem;
 }
 
 
@@ -96,7 +98,7 @@ li {
 .hero-main {
     display: inline-block;
     max-width: 1140px;
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 0rem 4rem 0rem;
 }
 
 .hero-logo {
@@ -111,6 +113,11 @@ li {
 .hero-sub {
     text-align:left;
     color: white;
+    font-size: 1rem;
+}
+
+.hero-sub p{
+    display: flex;
 }
 
 .what-is-arqma {
@@ -187,6 +194,7 @@ li {
     background-image: url("../../assets/images/sponsor-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 1rem;
 }
 
 .Exchanges-main {
@@ -208,6 +216,7 @@ li {
     background-image: url("../../assets/images/roadmap-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 1rem;
 }
 
 .Roadmap-main {
@@ -242,7 +251,7 @@ li {
 }
 
 .button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(49, 49, 49, 0.09), 0 17px 50px 0 rgba(95, 95, 95, 0.50);
 }
 
 
@@ -254,9 +263,13 @@ li {
 
 .Partners-main {
     max-width: 1140px;
-    display: inline-block;
+    display: inline-grid;
     padding: 4rem 0 4rem 0;
     font-size: 1.25rem;
+}
+
+.Partners h2{
+    color:black
 }
 
 .Partners-logo {
@@ -266,8 +279,8 @@ li {
 .Partners-text {
 }
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 1200px) {
+    
     h1 {
         font-size: 2rem;
     }
@@ -288,44 +301,33 @@ li {
         font-size: 1rem;
     }
 
-    .hero-background {
+    .hero-main {
         padding: 2rem;
     }
 
-    .hero-logo {
-      float: none;
-    }
-
-    .whatIs-main {
+    .what-is-arqma {
         padding: 2rem;
     }
 
-    .whatIs-text h2{
-        font-size: 2rem;
-    }
-
-    .FGNetwork-main{
+    .FGNetwork {
         padding: 2rem;
     }
 
     .FGNetwork-text h2{
         font-size: 2rem;
+        line-height: 1;
     }
 
     .Founder-main {
         padding: 2rem;
     }
 
-    .Founder-text h2{
-        font-size: 2rem;
+    .FGNetwork-main img {
+        text-align: center;
     }
 
     .Exchanges-main {
         padding: 2rem;
-    }
-
-    .Exchanges-text h2{
-        font-size: 2rem;
     }
 
     .Roadmap-main {
@@ -336,12 +338,30 @@ li {
         float: none;
     }
 
-    .Partners h2{
-        color:black
-    }
-
     .Roadmap-text {
         width: 100%;
     }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .hero-background {
+        padding: 2rem;
+    }
+
+    .hero-logo {
+      float: none;
+    }
+
+    .Founder-logo {
+        padding-right: 1rem;
+    }
+
+    .Founder-text h2 {
+        line-height: 1;
+    }
+
 
   }
