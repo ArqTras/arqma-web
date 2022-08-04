@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PresskitComponent } from './stats.component';
+import { StatsComponent } from './stats.component';
 
 describe('StatsComponent', () => {
-  let component: PresskitComponent;
+  let component: StatsComponent;
   let fixture: ComponentFixture<StatsComponent>;
 
   beforeEach(async () => {
