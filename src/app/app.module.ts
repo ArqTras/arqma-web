@@ -46,6 +46,7 @@ import { environment } from 'src/environments/environment';
     }),
     HttpClientModule
   ],
+//  providers: [],
   providers: [],
   bootstrap: [AppComponent]
 })

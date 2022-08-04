@@ -3,7 +3,9 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ApiService {
 
    api: string = 'https://explorer.arqma.com/api/networkinfo';
