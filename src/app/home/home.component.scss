@@ -403,6 +403,11 @@ li {
         text-align: center;
     }
 
+    .whatIs-logo {
+        float: left;
+        padding-right: 1rem;
+    }
+
     .hero-background {
         padding: 2rem;
     }
@@ -421,6 +426,14 @@ li {
 }
 
 @media only screen and (max-width: 550px) {
+    .hero-sub h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-sub h2 {
+        color: #FDBF1E;
+    }
+
     .whatIs-text p {
         text-align: right;
     }
@@ -433,12 +446,24 @@ li {
         display: none;
     }
 
+    .FGNetwork-text {
+        text-align: center;
+    }
+
+    .FGNetwork-main img {
+        width: 100%;
+    }
+
     .Founder-main {
         display: inline-grid;
     }
 
     .Founder-logo{
         text-align:center;
+    }
+
+    .Roadmap-main {
+        text-align: center;
     }
 }
 
