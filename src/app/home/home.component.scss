@@ -403,6 +403,11 @@ li {
         text-align: center;
     }
 
+    .whatIs-logo {
+        float: left;
+        padding-right: 1rem;
+    }
+
     .hero-background {
         padding: 2rem;
     }
@@ -421,16 +426,34 @@ li {
 }
 
 @media only screen and (max-width: 550px) {
-    .whatIs-text p {
-        text-align: right;
+    .hero-sub h1 {
+        font-size: 2.4rem;
     }
 
-    .whatIs-text h2 {
-        text-align: right;
+    .hero-sub h2 {
+        color: #FDBF1E;
     }
+
+    .whatIs-logo[_ngcontent-kwk-c7] {
+        float: none;
+        text-align: center;
+    }
+
+    .whatIs-text {
+        text-align: center;
+    }
+
 
     .FGNetwork-logo img{
         display: none;
+    }
+
+    .FGNetwork-text {
+        text-align: center;
+    }
+
+    .FGNetwork-main img {
+        width: 100%;
     }
 
     .Founder-main {
@@ -439,6 +462,10 @@ li {
 
     .Founder-logo{
         text-align:center;
+    }
+
+    .Roadmap-main {
+        text-align: center;
     }
 }
 
