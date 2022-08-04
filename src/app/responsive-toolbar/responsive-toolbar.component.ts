@@ -21,6 +21,11 @@ export class ResponsiveToolbarComponent implements OnInit {
       link: ['/downloads']
     },
     {
+      label: 'Stats',
+      icon: 'stats',
+      link: ['/stats']
+    },
+    {
       label: 'Press_Kit',
       icon: 'calendar_today',
       link: ['/presskit']
