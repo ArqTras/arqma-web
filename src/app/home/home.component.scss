@@ -385,6 +385,13 @@ li {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    ul {
+        padding: 0rem;
+    }
+}
+
+
 @media only screen and (max-width: 650px) {
     .Exchanges-logo img {
         padding: 1rem 0rem;
@@ -395,6 +402,10 @@ li {
 
 @media only screen and (max-width: 600px) {
 
+    p, li {
+        font-size: 1.2rem;
+    }
+
     .hero-sub {
         text-align: center;
     }
@@ -404,7 +415,8 @@ li {
     }
 
     .whatIs-logo {
-        float: left;
+        float: none;
+        text-align: center;
         padding-right: 1rem;
     }
 
@@ -444,7 +456,7 @@ li {
     }
 
 
-    .FGNetwork-logo img{
+    .FGNetwork-logo img {
         display: none;
     }
 
@@ -460,13 +472,11 @@ li {
         display: inline-grid;
     }
 
-    .Founder-logo{
-        text-align:center;
+    .Founder-logo {
+        text-align: center;
     }
 
     .Roadmap-main {
         text-align: center;
     }
 }
-
-
